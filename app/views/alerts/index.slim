@@ -1,0 +1,12 @@
+h1 Alerts
+table
+  thead
+    - for col in Alert.column_names
+      th= col
+
+  tbody
+    - for alert in @alerts
+      tr
+        - for col in Alert.column_names
+          td= alert.send(col)
+
