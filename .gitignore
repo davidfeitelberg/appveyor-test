@@ -24,4 +24,5 @@ config/secrets.yml
 .rvmrc
 
 /.idea
-
+/db/*.mdf
+/db/*.ldf
