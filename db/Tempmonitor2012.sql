@@ -5,9 +5,9 @@ DROP DATABASE [Tempmonitor]
 
 /****** Object:  Database [Tempmonitor]    ******/
 CREATE DATABASE [Tempmonitor] ON  PRIMARY 
-( NAME = N'Tempmonitor_dat', FILENAME = N'C:\Program Files\Checkpoint\Tempsys\Tempmonitor.mdf' , SIZE = 10000KB , MAXSIZE = UNLIMITED, FILEGROWTH = 80KB )
+( NAME = N'Tempmonitor_dat', FILENAME = N'.\Tempmonitor.mdf' , SIZE = 10000KB , MAXSIZE = UNLIMITED, FILEGROWTH = 80KB )
  LOG ON 
-( NAME = N'Tempmonitor_log', FILENAME = N'C:\Program Files\Checkpoint\Tempsys\Tempmonitor.ldf' , SIZE = 5000KB , MAXSIZE = UNLIMITED, FILEGROWTH = 10%)
+( NAME = N'Tempmonitor_log', FILENAME = N'.\Tempmonitor.ldf' , SIZE = 5000KB , MAXSIZE = UNLIMITED, FILEGROWTH = 10%)
 GO
 EXEC dbo.sp_dbcmptlevel @dbname=N'Tempmonitor', @new_cmptlevel=80
 GO
