@@ -9,7 +9,7 @@ CREATE DATABASE [Tempmonitor] ON  PRIMARY
  LOG ON 
 ( NAME = N'Tempmonitor_log', FILENAME = N'C:\projects\appveyor-test\db\Tempmonitor.ldf' , SIZE = 5000KB , MAXSIZE = UNLIMITED, FILEGROWTH = 10%)
 GO
-EXEC dbo.sp_dbcmptlevel @dbname=N'Tempmonitor', @new_cmptlevel=80
+EXEC dbo.sp_dbcmptlevel @dbname=N'Tempmonitor', @new_cmptlevel=110
 GO
 IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
 begin
